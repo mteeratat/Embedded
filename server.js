@@ -13,7 +13,7 @@ mongoose.connection.on('error', err => {
 
 app.use(express.json())
 
-app.listen(9000, () => {
+app.listen(process.env.PORT || 9000, () => {
     console.log('Application is running on http://127.0.0.1:9000/')
 })
 
